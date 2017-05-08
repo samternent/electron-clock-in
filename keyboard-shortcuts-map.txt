@@ -1,0 +1,96 @@
+@sections = [
+    { id: 'global', icon: 'fa fa-globe', title: app.tl('Global')}
+    { id: 'tasks', icon: 'fa fa-tasks', title: app.tl('Tasks')}
+    { id: 'boards', icon: 'fa fa-columns', title: app.tl('Boards') }
+]
+
+@shortcuts = {
+    'global': {
+        title: app.tl('Global')
+        types: [
+            {
+                title: app.tl('Quick Add')
+                shortcuts: [
+                    { keys: ['q'], name: app.tl('Open Quick Add Menu'), icon: 'fa fa-plus', }
+                    { keys: ['q', 'p'], combo: ['→'], name: app.tl('Add Project'), icon: 'fa fa-briefcase' }
+                    { keys: ['q', 'm'], combo: ['→'], name: app.tl('Add Milestone'), icon: 'fa fa-calendar' }
+                    { keys: ['q', 't'], combo: ['→'], name: app.tl('Add Task'), icon: 'fa fa-check' }
+                    { keys: ['q', 'n'], combo: ['→'], name: app.tl('Add Message'), icon: 'ico-message' }
+                    { keys: ['q', 'e'], combo: ['→'], name: app.tl('Add Event'), icon: 'fa fa-calendar' }
+                    { keys: ['q', 's'], combo: ['→'], name: app.tl('Start Timer'), icon: 'fa fa-play' }
+                    { keys: ['q', 'l'], combo: ['→'], name: app.tl('Log Time'), icon: 'ico-timer' }
+                    { keys: ['q', 'u'], combo: ['→'], name: app.tl('Invite Users'), icon: 'fa fa-users' }
+                ]
+            }
+            {
+                title: app.tl('Misc')
+                shortcuts: [
+                    { keys: ['s'], name: app.tl('Switch Project'), icon: 'fa fa-location-arrow' }
+                    { keys: ['0-9'], name: app.tl('Switch to Project Tab'), icon: 'fa fa-location-arrow' }
+                    { keys: ['g'], name: app.tl('Open Gantt Chart'), icon: 'fa fa-tasks' }
+                    { keys: ['h'], name: app.tl('Open Support Centre'), icon: 'fa fa-phone' }
+                ]
+            }
+        ]
+    }
+    'tasks': {
+        title: app.tl('Tasks')
+        types: [
+            {
+                title: app.tl('When Mouse is Over a Task')
+                shortcuts: [
+                    { keys: [ 'e' ], name: app.tl('Edit Task'), icon: 'fa fa-pencil' }
+                    { keys: [ 'a' ], name: app.tl('Set Task to Anyone'), icon: 'fa fa-minus' }
+                    { keys: [ '+' ], name: app.tl('Add Me to Task'), icon: 'fa fa-plus' }
+                    { keys: [ '-' ], name: app.tl('Remove Me from Task'), icon: 'fa fa-times' }
+                    { keys: [ 'c' ], name: app.tl('Complete Task'), icon: 'fa fa-check' }
+                    { keys: [ 'f' ], name: app.tl('Add Files to Task'), icon: 'fa fa-file-o' }
+                    { keys: [ 'd' ], name: app.tl('Duplicate Task'), icon: 'fa fa-copy' }
+                    { keys: [ 'm' ], name: app.tl('Move Task'), icon: 'fa fa-arrows' }
+                    { keys: [ 'n' ], name: app.tl('Add Comment'), icon: 'fa fa-comment' }
+                ]
+            }
+        ]
+    }
+    'boards': {
+        title: app.tl('Boards')
+        types: [
+            {
+                title: app.tl('Navigation')
+                shortcuts: [
+                    { keys: ['←', '→'], combo: ['/'], name: app.tl('Navigate Columns'), icon: 'fa fa-location-arrow' }
+                    { keys: ['↑', '↓'], combo: ['/'], name: app.tl('Navigate Cards'), icon: 'fa fa-location-arrow' }
+                    { keys: ['⇧', '↑', '↓'], combo: ['+', '/'], name: app.tl('Select Multiple Cards'), icon: 'fa fa-location-arrow' }
+                ]
+            }
+            {
+                title: app.tl('Columns')
+                shortcuts: [
+                    { keys: [ 'e' ], name: app.tl('Edit Column'), icon: 'fa fa-pencil' }
+                    { keys: [ 'f' ], name: app.tl('Filter Cards'), icon: 'fa fa-search' }
+                ]
+            }
+            {
+                title: app.tl('Cards')
+                shortcuts: [
+                    { keys: [ 'e' ], name: app.tl('Edit Task'), icon: 'fa fa-pencil' }
+                    { keys: [ 'a' ], name: app.tl('Set Task to Anyone'), icon: 'fa fa-minus' }
+                    { keys: [ '+' ], name: app.tl('Add Me to Task'), icon: 'fa fa-plus' }
+                    { keys: [ '-' ], name: app.tl('Remove Me from Task'), icon: 'fa fa-times' }
+                    { keys: [ 'c' ], name: app.tl('Complete Task'), icon: 'fa fa-check' }
+                    { keys: [ 'd' ], name: app.tl('Duplicate Task'), icon: 'fa fa-copy' }
+                    { keys: [ 'n' ], name: app.tl('Add Comment'), icon: 'fa fa-comment-o' }
+                ]
+            }
+            {
+                title: app.tl('Multiple Cards Selected')
+                shortcuts: [
+                    { keys: [ 'a' ], name: app.tl('Set Task to Anyone'), icon: 'fa fa-minus' }
+                    { keys: [ '+' ], name: app.tl('Add Me to Task'), icon: 'fa fa-plus' }
+                    { keys: [ '-' ], name: app.tl('Remove Me from Task'), icon: 'fa fa-times' }
+                    { keys: [ 'c' ], name: app.tl('Complete Task'), icon: 'fa fa-check' }
+                ]
+            }
+        ]
+    }
+}

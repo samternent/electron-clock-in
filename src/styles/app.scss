@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,400,800);
+
+* { box-sizing: border-box;margin: 0; padding: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #3FBB68;
+}
+
+
+.web-version {
+  margin: 10px auto;
+  border: 1px solid #eee;
+  border-radius: 0;
+  height: 420px;
+  width: 300px;
+}
+
+.main-app {
+  position: relative;
+  width: 280px;
+  margin-top: 10px;
+  border-radius: 5px;
+  z-index: 1;
+  background-color: #fff;
+  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+  background-blend-mode: screen;
+  border: 1px solid rgba(#eee, 0.9);
+  border-top: 5px solid rgba(#eee, 0.9);
+
+}
+.background {
+  z-index: -1;
+  position: relative;
+  width: 280px;
+
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-bottom: 10px solid #eee;
+  }
+}
+
+
+
+
+.textarea,
+.input {
+  border: 0;
+  font-weight: 100;
+  outline: none;
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  text-transform: uppercase;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align: center;
+  display: block;
+  border: 0;
+  text-transform: uppercase;
+  background-color: #3FBB68;
+  color: #fff;
+  cursor: pointer;
+  outline: 0;
+
+  &:hover {
+    background-color: lighten(#3FBB68, 5);
+  }
+  &:active {
+    background-color: darken(#3FBB68, 5);
+  }
+}
+
+
+.toolbar {
+  list-style-type: none;
+  display: block;
+  text-align: right;
+  font-size: 25px;
+
+  li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    color: #aaa;
+
+    &:hover {
+      color: #ccc;
+    }
+
+    &.left {
+      float: left;
+    }
+  }
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  border: 2px solid #eee;
+}

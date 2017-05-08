@@ -1,0 +1,23 @@
+.login-form {
+  margin: 60px 0; }
+
+.login__input {
+  background-color: #fff;
+  border: 0;
+  color: #333;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  font-size: 1.1em;
+  letter-spacing: -1px;
+  text-align: center;
+  outline: 0;
+  padding: 5px 10px; }
+
+.login__button {
+  display: block;
+  margin: 30px auto;
+  width: 220px;
+  padding: 10px;
+  text-transform: capitalize;
+  font-weight: 400; }
