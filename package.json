@@ -1,7 +1,7 @@
 {
   "name": "electron-quick-start",
   "productName": "Teamwork Clock In",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
